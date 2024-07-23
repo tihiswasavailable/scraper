@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2015",                // Ziel-JavaScript-Version
+        "module": "commonjs",              // Modul-System
+        "lib": ["es2015", "dom"],          // Verfügbare Standardbibliotheken
+        "outDir": "./dist",                // Zielverzeichnis für die kompilierten Dateien
+        "sourceMap": true,                 // Generieren von Source Maps
+        "strict": true,                    // Aktiviert alle strengen Prüfungen
+        "esModuleInterop": true,           // Kompabilität mit CommonJS-Modulen
+        "skipLibCheck": true,              // Überspringt die Überprüfung der Typdefinitionen
+        "forceConsistentCasingInFileNames": true // Erzwingt konsistente Groß-/Kleinschreibung bei Dateinamen
+    },
+    "include": ["./src/**/*"],            // Dateipfade, die kompiliert werden sollen
+    "exclude": ["./node_modules", "./dist"] // Verzeichnisse, die ausgeschlossen werden sollen
+}
